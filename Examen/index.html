@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inversiones con Danny</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h1>Inversiones con Danny</h1>
+      <form id="investment-form">
+        <label for="days">Días a Invertir (menor o igual a 750 y mayor a 1):</label>
+        <input type="number" id="days" min="1" max="750" required>
+        <label for="amount">Dinero que desea invertir:</label>
+        <input type="number" id="amount" min="1" required>
+        <button type="submit">Calcular</button>
+      </form>
+    </div>
+    <div class="right">
+      <h2>Tabla de Inversión</h2>
+      <div class="table-container">
+        <table id="investment-table">
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Cantidad Acumulada</th>
+            </tr>
+          </thead>
+          <tbody id="investment-body"></tbody>
+        </table>
+      </div>
+      <div id="total"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
