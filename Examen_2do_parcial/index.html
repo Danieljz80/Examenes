@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor chido</title>
+  <style>
+    body {
+      background-color: #1e1e3f;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #titulo {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 50px;
+      color: #4682b4; /* Azul acero */
+    }
+
+    #mi_div {
+      width: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+    .opciones {
+      background-color: #4682b4; /* Azul acero */
+      color: white;
+      border-color: white;
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    #boton {
+      background-color: #87ceeb; /* Azul cielo claro */
+      color: rgb(8, 8, 8);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    #resultado {
+      text-align: center;
+      margin-top: 20px;
+      color: #4682b4; /* Azul acero */
+    }
+
+    #mi_div2 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    #imagen {
+      width: 300px;
+      border-radius: 50%;
+      border: 5px solid #87ceeb; 
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="titulo">Equivalencia de monedas , ¿Unas chelas?</h1>
+
+  <div id="mi_div2">
+    <img src="Monaschinas.jpg" alt="imagen" id="imagen">
+  </div>
+
+  <div id="mi_div">
+
+    <label for="amount">Cantidad:</label>
+    <input id="amount" placeholder="Ingrese la cantidad" class="opciones">
+    <span style="color: rgb(111, 0, 255);" id="span1"></span>
+
+    <label for="fromCurrency">Moneda de origen:</label>
+    <select id="fromCurrency" class="opciones">
+      <option value="USD">Dólares estadounidenses (USD)</option>
+      <option value="EUR">Euros (EUR)</option>
+      <option value="GBP">Libras Esterlinas (GBP)</option>
+      <option value="JPY">Yenes Japoneses (JPY)</option>
+      <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <label for="toCurrency">Moneda de destino:</label>
+    <select id="toCurrency" class="opciones">
+      <option value="USD">Dólares estadounidenses (USD)</option>
+      <option value="EUR">Euros (EUR)</option>
+      <option value="GBP">Libras Esterlinas (GBP)</option>
+      <option value="JPY">Yenes Japoneses (JPY)</option>
+      <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <button id="boton" class="opciones">Convertir imágenes</button>
+
+    <p id="resultado">¡Imágenes convertidas!</p>
+
+    <script src="main.js"></script>
+
+  </div>
+
+</body>
+
+</html>
